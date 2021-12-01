@@ -39,8 +39,7 @@ public final class Navigation {
      *         such path could be found. When the destination is the current
      *         square, an empty list is returned.
      */
-    public static List<Direction> shortestPath(Square from, Square to,
-                                                         Unit traveller) {
+    public static List<Direction> shortestPath(Square from, Square to, Unit traveller) {
         
         List<Direction> returnList = new ArraryList<>();
         
