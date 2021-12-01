@@ -41,6 +41,9 @@ public final class Navigation {
      */
     public static List<Direction> shortestPath(Square from, Square to,
                                                          Unit traveller) {
+        
+        List<Direction> returnList = new ArraryList<>();
+        
         if (from.equals(to)) {
             return new ArrayList<>();
         }
@@ -57,7 +60,7 @@ public final class Navigation {
             visited.add(square);
             addNewTargets(traveller, targets, visited, node, square);
         }
-        return null;
+        return returnList;
     }
 
     private static void addNewTargets(Unit traveller, List<Node> targets,
